@@ -1,38 +1,309 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container {
+  position: relative;
   min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background: linear-gradient(to bottom right, #682381 50%, transparent 50.5%)
+      no-repeat bottom,
+    linear-gradient(0deg, #682381, #2e1e4d) no-repeat top;
+  background-size: 100% 11em, 100% calc(100% - 11em);
+}
+
+.container .welcomeData {
+  width: 100%;
+  margin: 20px;
+}
+
+.container .welcomeData .information h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container .welcomeData .information h3 {
+  color: white;
+  margin-block: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container .list {
+  color: white;
+  margin-top: 30px;
+  border: 1.6px dashed white;
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+  display: flex;
+}
+
+.container .list .listBtn {
+  background-color: white;
+  width: 150px;
+  height: 30px;
+  color: #da2128;
+  border: none;
+  font-weight: 900;
+  font-size: x-small;
+  position: absolute;
+  transform: translate(1px, -26px);
+  align-items: center;
+}
+
+.container .list li {
+  margin: 15px;
+  list-style-type: circle;
+}
+
+.container .formBox {
+  width: 40%;
+  background-color: white;
+  padding: 30px;
+  margin-top: 120px;
+  margin-right: 70px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: gray;
+}
+
+.container .formBox .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .form .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container .form .inputBoxBtn {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container .form .heading {
+  margin-bottom: 0;
+}
+
+.container .form .inputBox input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px;
+}
+
+.container .form .inputBoxBtn input {
+  width: 100%;
+  height: 50px;
+  border-radius: 2px;
+}
+
+.container .form .inputBox .select {
+  width: 100%;
+  height: 49px;
+  outline: none;
+  padding: 10px;
+  color: gray;
+  border-radius: 5px;
+}
+
+.container .form .inputBox .label {
+  position: absolute;
+  left: 0;
+  transform: translate(11px, -11px);
+  background-color: white;
+  font-size: x-small;
+  padding: 5px;
+}
+
+.container .form .inputBoxBtn .btn {
+  margin-bottom: 70px;
+  background-color: #da2128;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.section .vehicleInfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px;
+  padding: 10px;
+}
+
+.section .vehicleInfo .info1 {
+  margin: 5px;
+}
+
+.section .vehicleInfo .info1 h3 {
+  margin-top: 10px;
+}
+
+.section .vehicleInfo .info1 h4 {
+  margin-top: 10px;
+}
+
+.section .vehicleInfo .info1 .p1 {
+  margin-top: 10px;
+  color: gray;
+}
+
+.section .vehicleInfo .info1 .p2 {
+  margin-top: 20px;
+  color: gray;
+  font-size: medium;
+}
+
+.section .vehicleInfo .image {
+  width: 50%;
+  margin-left: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7fd;
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+.footer .footerHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footerHeader h3 {
+  margin-top: 20px;
+}
+
+.footer .footerHeader h5 {
+  margin-top: 20px;
+  color: gray;
+}
+
+.footer .footerList {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer .footerList .list1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footerList .list2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footerList .subList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer .footerList .subList .numberList {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  font-size: 30px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer .footerList .subList .textList {
+  margin: 20px;
+}
+.subFooter {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #682381, #2e1e4d);
+  margin-bottom: 2%;
+}
+.subFooter-container {
+  text-align: center;
+  color: white;
+  width: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    min-width: 136%;
+    flex-direction: column;
+    background: linear-gradient(to left, #682381, #2e1e4d);
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  .container .information {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0%;
+  }
+
+  .container .list {
+    width: 65%;
+    margin: 20px;
+    margin-top: -25px;
+    margin-left: 15%;
+  }
+
+  .container .formBox {
+    width: 70%;
+    margin-block: 25px;
+    margin-right: 120px;
+    margin-left: 15%;
+  }
+
+  .section {
+    margin-top: -30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .section .vehicleInfo {
+    width: 130%;
+    margin-left: -70%;
+    text-align: center;
+  }
+
+  .section .vehicleInfo .info1 {
+    margin-top: 0px;
+  }
+
+  .footer {
+    width: 150%;
+  }
+
+  .footer .footerList {
+    flex-direction: column;
+  }
+  .subFooter {
+    flex-direction: column;
+    width: 150%;
+    height: 200px;
   }
 }
