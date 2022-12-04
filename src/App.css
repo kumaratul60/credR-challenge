@@ -254,7 +254,6 @@
     min-width: 136%;
     flex-direction: column;
     background: linear-gradient(to left, #682381, #2e1e4d);
-    
   }
 
   .container .information {
@@ -304,6 +303,119 @@
   .subFooter {
     flex-direction: column;
     width: 150%;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    min-width: 180%;
+    flex-direction: column;
+    background: linear-gradient(to left, #682381, #2e1e4d);
+  }
+  .container .welcomeData {
+    width: 36%;
+    margin: 20px;
+  }
+  .container .information {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  .container .list {
+    width: 65%;
+    margin: 20px;
+    margin-top: -25px;
+    margin-left: 65px;
+  }
+
+  .container .formBox {
+    width: 25%;
+    margin-left: 8%;
+  }
+
+  .section {
+    margin-top: -30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 150%;
+  }
+
+  .section .vehicleInfo {
+    width: 45%;
+    margin-left: 16%;
+  }
+
+  .section .vehicleInfo .info1 {
+    margin-top: 0px;
+  }
+
+  .footer {
+    width: 170%;
+  }
+
+  .footer .footerList {
+    flex-direction: column;
+  }
+  .subFooter {
+    flex-direction: column;
+    width: 170%;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container {
+    min-width: 180%;
+    flex-direction: column;
+    background: linear-gradient(to left, #682381, #2e1e4d);
+  }
+
+  .container .information {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0%;
+  }
+
+  .container .list {
+    width: 85%;
+    margin: 20px;
+    margin-top: -25px;
+  }
+
+  .container .formBox {
+    width: 85%;
+    margin-left: 12%;
+  }
+
+  .section {
+    margin-top: -30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 180%;
+  }
+
+  .section .vehicleInfo {
+    width: 95%;
+    margin-left: -40%;
+  }
+
+  .section .vehicleInfo .info1 {
+    margin-top: 0px;
+  }
+
+  .footer {
+    width: 180%;
+  }
+
+  .footer .footerList {
+    flex-direction: column;
+  }
+  .subFooter {
+    flex-direction: column;
+    width: 180%;
     height: 200px;
   }
 }
